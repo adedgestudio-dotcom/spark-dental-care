@@ -81,10 +81,10 @@ export default function LocationCTA() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href={`tel:${CLINIC_INFO.phone}`}
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full text-white font-bold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 w-fit"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 w-full sm:w-fit"
                 style={{ backgroundColor: "var(--color-teal)" }}
               >
                 📞 Call: {CLINIC_INFO.phoneDisplay}
@@ -93,11 +93,11 @@ export default function LocationCTA() {
                 href="https://wa.me/919566009206"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full text-white font-bold text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 w-fit"
+                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-full text-white font-bold text-base sm:text-lg transition-all duration-300 hover:shadow-2xl hover:scale-105 w-full sm:w-fit"
                 style={{ backgroundColor: "#25D366" }}
               >
                 <svg
-                  className="w-6 h-6"
+                  className="w-5 h-5 sm:w-6 sm:h-6"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
