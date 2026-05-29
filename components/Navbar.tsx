@@ -44,6 +44,13 @@ export default function Navbar() {
           {/* Nav Links - Hidden on mobile */}
           <div className="hidden md:flex items-center gap-8">
             <a
+              href="#"
+              className="text-sm font-medium hover:opacity-70 transition-opacity"
+              style={{ color: "var(--color-text)" }}
+            >
+              Home
+            </a>
+            <a
               href="#services"
               className="text-sm font-medium hover:opacity-70 transition-opacity"
               style={{ color: "var(--color-text)" }}
@@ -124,6 +131,14 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="sm:hidden pb-4 space-y-3">
+            <a
+              href="#"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block py-2 text-sm font-medium"
+              style={{ color: "var(--color-text)" }}
+            >
+              Home
+            </a>
             <a
               href="#services"
               onClick={() => setIsMobileMenuOpen(false)}
